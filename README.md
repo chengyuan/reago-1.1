@@ -1,6 +1,12 @@
-reago
+reago v1.1
 =====
+Changes:
+1. Refactored the entire workflow, making code easier to follow.
+2. Fixed various bugs.
 
+
+reago v1.0
+=====
 an assembly tool for 16S ribosomal RNA recovery from metagenomic data
 
 Dependencies:
@@ -47,8 +53,3 @@ XXXX.2
 The only difference of their names is the last character. 
 
 
-reago v1.1
-=====
-Changes:
-1. Refactored the entire workflow, making code easier to follow.
-2. Fixed various bugs.
