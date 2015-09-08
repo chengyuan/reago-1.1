@@ -1,7 +1,9 @@
 reago v1.1
 =====
+
 Changes:
 1. Refactored the entire workflow, making code easier to follow.
+
 2. Fixed various bugs.
 
 
@@ -10,7 +12,9 @@ reago v1.0
 an assembly tool for 16S ribosomal RNA recovery from metagenomic data
 
 Dependencies:
+
 1. Infernal 1.1.1
+
 2. Readjoiner 1.2
 
 Runbook:
@@ -41,7 +45,7 @@ Optional parameters:
 
 -b PATH_FINDING_PARAMETER, default 10
 
-example: python reago.py make_sample/sample/filtered.fasta sample_out -l 101
+example: python reago.py filter_out/filtered.fasta sample_out -l 101
 
 **Note:**
 
