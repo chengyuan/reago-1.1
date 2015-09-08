@@ -1,0 +1,23 @@
+- REAGO
+python filter_input.py metagenomic_1.fasta metagenomic_2.fasta filter_out cm ba 10
+python reago.py filter_out/filetered.fasta sample_out -l 101
+
+- EMIRGE
+python emirge.py output_dir 
+        -1 path_to_data.1.fq 
+        -b SSU_bowtie (build from SSU_candidate.fasta excluding selected genes)
+        -f SSU_candidate.fasta (SSU_candidate.fasta excluding selected genes)
+        -l 110 
+        -2 path_to_data.2.fq 
+        -i 110 
+        -s 100 
+        --phred33
+
+- MetaVelvet
+velveth out-dir 55   -fasta -shortPaired input_data.fa
+velvetg out-dir -exp_cov auto
+meta-velvetg out-dir
+
+
+- IDBA-ud
+idba_ud -r  input_data.fa --mink 55  --num_threads 1 -o 1-cpu
