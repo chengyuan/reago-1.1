@@ -1,4 +1,4 @@
-reago v1.1
+REAGO v1.1
 =====
 
 Changes:
@@ -7,8 +7,29 @@ Changes:
 
 2. Fixed various bugs.
 
+To cite REAGO
+=====
 
-reago v1.0
+MLA
+-----
+
+Yuan, Cheng, et al. "Reconstructing 16S rRNA genes in metagenomic data." Bioinformatics 31.12 (2015): i35-i43.
+
+Tex
+-----
+
+@article{yuan2015reconstructing,
+  title={Reconstructing 16S rRNA genes in metagenomic data},
+  author={Yuan, Cheng and Lei, Jikai and Cole, James and Sun, Yanni},
+  journal={Bioinformatics},
+  volume={31},
+  number={12},
+  pages={i35--i43},
+  year={2015},
+  publisher={Oxford Univ Press}
+}
+
+Manual
 =====
 an assembly tool for 16S ribosomal RNA recovery from metagenomic data
 
@@ -16,7 +37,7 @@ Dependencies:
 
 1. Infernal 1.1.1
 
-2. Readjoiner 1.2
+2. Readjoiner 1.2 (http://genometools.org/pub/nightly_builds/)
 
 Runbook:
 
@@ -38,7 +59,7 @@ command: python reago.py filename.fasta -l READ_LENGTH
 
 Optional parameters:
 
--o OVERLAP, default 0.8
+-o OVERLAP, default 0.7
 
 -e ERROR_CORRECTION_THRESHOLD, default 0.05
 
